@@ -1,0 +1,33 @@
+{
+    "name": "unit-testing-examples",
+    "version": "0.0.1",
+    "description": "Examples for Unit Testing",
+    "private": true,
+    "scripts": {
+        "start": "node ./app.js",
+        "test": "node ./node_modules/mocha/bin/mocha ./test"
+    },
+    "dependencies": {
+        "async": "0.8.x",
+        "express": "4.1.x",
+        "body-parser": "1.0.x",
+        "cookie-parser": "1.1.x",
+        "method-override": "1.0.x",
+        "express-session": "1.1.x",
+        "morgan": "1.0.x",
+        "errorhandler": "1.0.x",
+        "response-time": "1.0.x"
+    },
+    "devDependencies":{
+        "mocha":"1.19.x",
+        "chai":"1.9.x",
+        "sinon":"1.10.x",
+        "mockery":"1.4.x",
+        "supertest":"0.12.x"
+    },
+    "author": "Itai Koren (@itkoren)",
+    "license": "MIT",
+    "engines": {
+        "node": ">= 0.10.x"
+    }
+}
