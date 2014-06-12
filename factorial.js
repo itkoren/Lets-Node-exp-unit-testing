@@ -14,10 +14,6 @@ var factorial = module.exports = function(n, callback) {
             return index <= n;
         },
         function(next) {
-            setTimeout(function(){
-                console.log("TIMEOUT 0");
-            }, 0);
-
             setImmediate(function() {
                 console.log("step" + index);
                 fact = fact * index;
@@ -27,7 +23,7 @@ var factorial = module.exports = function(n, callback) {
         },
         function(err) {
             setImmediate(function() {
-                callback(null, fact);
+                callback(err, fact);
             });
         }
     );
